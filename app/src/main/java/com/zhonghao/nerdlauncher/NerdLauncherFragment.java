@@ -56,7 +56,7 @@ public class NerdLauncherFragment extends Fragment {
 
     private void setupAdapter() {
         Intent intent = new Intent(Intent.ACTION_MAIN);
-        intent.addCategory(Intent.CATEGORY_LAUNCHER);
+        intent.addCategory(Intent.CATEGORY_LAUNCHER);//
 
         PackageManager pm = getActivity().getPackageManager();
         List<ResolveInfo> activities = pm.queryIntentActivities(intent, 0);
